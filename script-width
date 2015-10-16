@@ -1,0 +1,2 @@
+#!/bin/bash
+perl -ne '$f; $h = length $_; $f = $h if $h > $f; END {print "$f\n"}' $1

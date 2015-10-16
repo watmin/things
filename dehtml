@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use URI::Escape;
+
+my $uri = pop;
+my $decoded = uri_unescape($uri);
+$decoded =~ s/%20/ /g;
+
+printf "%s\n", $decoded;
+
